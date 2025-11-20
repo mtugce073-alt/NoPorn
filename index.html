@@ -220,3 +220,170 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      font-size: 12px;
+      color: var(--text-soft);
+    }
+
+    .contact-left strong {
+      color: var(--text-main);
+      display: block;
+      font-size: 13px;
+    }
+
+    .contact-icon {
+      width: 26px;
+      height: 26px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(87, 108, 255, 0.24);
+      font-size: 16px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 11px;
+      color: var(--text-soft);
+    }
+
+    @media (max-width: 720px) {
+      .card {
+        padding: 18px 14px 20px;
+        border-radius: 22px;
+      }
+      header {
+        align-items: flex-start;
+      }
+      h1 {
+        font-size: 21px;
+      }
+      .grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .btn-row {
+        justify-content: flex-start;
+      }
+      .contact-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="glow"></div>
+
+      <header>
+        <div class="logo-pill">
+          <span>🧠</span>
+        </div>
+        <div>
+          <h1>NoPorn Support</h1>
+          <div class="subtitle">
+            Build Better Digital Habits  
+            <!-- (Daha İyi Dijital Alışkanlıklar Oluştur) -->
+          </div>
+        </div>
+      </header>
+
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Help, legal documents and contact</span>
+        <!-- (Yardım, yasal metinler ve iletişim) -->
+      </div>
+
+      <div class="grid">
+        <section class="section">
+          <h2>How can we help?</h2>
+          <!-- (Size nasıl yardımcı olabiliriz?) -->
+          <p>
+            NoPorn is a digital habit-tracking app that helps you monitor your
+            streaks, understand your progress, and stay consistent with your
+            personal goals. This page provides support information and the legal
+            documents required for the App Store.
+          </p>
+          <!--
+          (NoPorn, serilerini takip etmene, ilerlemeni görmene ve kişisel hedeflerine
+          düzenli şekilde bağlı kalmana yardımcı olan bir dijital alışkanlık takip
+          uygulamasıdır. Bu sayfa, destek bilgilerini ve App Store için gerekli
+          yasal metinleri sunar.)
+          -->
+
+          <p>
+            For any questions about your data, subscriptions or app usage,
+            please contact us via email.
+          </p>
+          <!--
+          (Verilerin, aboneliklerin veya uygulama kullanımıyla ilgili soruların için
+          lütfen e-posta yoluyla bizimle iletişime geç.)
+          -->
+
+          <div class="btn-row">
+            <a href="privacy.html" class="btn btn-primary">
+              <span class="icon">🔒</span>
+              <span>Privacy Policy</span>
+            </a>
+            <a href="terms.html" class="btn btn-outline">
+              <span class="icon">📜</span>
+              <span>Terms of Use</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Contact & Support</h2>
+          <!-- (İletişim ve Destek) -->
+          <p>
+            If you experience an issue, please include your device model, iOS
+            version, and a short description of the problem.
+          </p>
+          <!--
+          (Bir sorunla karşılaşırsan, lütfen cihaz modelini, iOS sürümünü ve sorunun
+          kısa bir açıklamasını e-postana ekle.)
+          -->
+
+          <ul>
+            <li>App name: <strong>NoPorn</strong></li>
+            <li>Platform: iOS</li>
+            <li>Developer: Salih Yalcin (accslabteam)</li>
+          </ul>
+
+          <div class="contact-card">
+            <div class="contact-left">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <strong>Support Email</strong>
+                <!-- (Destek E-postası) -->
+                <span>accslabteam@gmail.com</span>
+              </div>
+            </div>
+            <a class="btn btn-outline" href="mailto:accslabteam@gmail.com">
+              <span class="icon">➡️</span>
+              <span>Send Email</span>
+              <!-- (E-posta Gönder) -->
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        NoPorn – Copyright © 2025 Salih Yalcin. All rights reserved.
+        <!-- (Telif Hakkı © 2025 Salih Yalçın. Tüm hakları saklıdır.) -->
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
